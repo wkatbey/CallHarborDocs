@@ -3,7 +3,12 @@ Client-Form:
 		-Added 'Type' column, with domain {'Ported', 'Created'}
 		-Corrected issue where DIDExt was undefined on phones 
 		 without DID Extensions loaded from the database 
-		-Slightly changed tab design	
+		-Slightly changed tab design
+	New Numbers Tab:
+		-Added refresh button that allows user to retrieve a new 
+		 set of numbers, with given area code
+		-Modified phone number retrieval, populate select box 
+		 with 25 numbers now.	
 	Review Tab:
 		-Corrected a small column issue concerning the 
 		 bothNumbers table	
@@ -19,3 +24,21 @@ Client-Form:
 		 saved in the database. Discovered when account number 
 		 pin was loaded into a field, when the pin no longer 
 		 existed.
+	Extensions Tab:
+		-Corrected issue where extension couldn't be deleted
+	Ported Numbers Tab:
+		-Corrected issue, made slight change that ensures the 
+		 location is displayed when a DID extension is selected
+	Submission:
+		-The numbers that are to be ordered in bothNumbers are 
+		 successfully ordered on submission
+Staff-Form:
+	-Corrected issue where hardware types weren't being saved to the 
+	 database, and where features/hardware weren't loaded into the 
+	 verify client form. 
+	-Corrected issue where only one hardware/feature type was saved 
+	 to the database (order-form submission), and only one was 
+	 retrieved in the verify client form.
+	-Order form was not validating whether or not the total quantity 
+	 of each phone matched the sum of the fields in User MRC and 
+	 Additional MRC
