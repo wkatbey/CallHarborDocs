@@ -1,0 +1,21 @@
+Client-Form:
+	Both Numbers Tab:
+		-Added 'Type' column, with domain {'Ported', 'Created'}
+		-Corrected issue where DIDExt was undefined on phones 
+		 without DID Extensions loaded from the database 
+		-Slightly changed tab design	
+	Review Tab:
+		-Corrected a small column issue concerning the 
+		 bothNumbers table	
+	Billing Accounts Tab:
+		-Corrected issue where if user logs out of a client's 
+		 pin, logs into a new pin (first time log in), the 
+		 billing accounts list will remain the same as it was 
+		 with the previous pin
+		-Corrected issue where location won't display under the 
+		 same circumstances listed above
+	Carriers Tab:
+		-Corrected issue where an account number's data is not 
+		 saved in the database. Discovered when account number 
+		 pin was loaded into a field, when the pin no longer 
+		 existed.
