@@ -1,0 +1,35 @@
+Client-Form:
+-Corrected the following bugs: Set location question to 'single location', refresh the page, then set to 'multiple locations'. 
+The Locations tab will not display the multiple locations view. Additionally, clicking on an option without hitting 'next' 
+will prevent the question data from being sent to the database. 
+-Phone number retrieval is now handled by PhoneNumbersAPI.js. Retrieving a list of numbers, and loading a number into the list 
+are all successful.
+-User enters area code and selects a phone number. Once the user clicks the number purpose text box, the area code and phone 
+number fields are no longer cleared, unless the Toll-Free option is selected. 
+-Redesigned Area Code, Phone Number, & Location fields. Placed them in the same row.
+-Both-Numbers Tab: 
+	--Deleting a phone number will delete the phone number in the database. 
+	--Whether or not a number is ported is recognized when editing the phone 
+	number. This information is saved 
+	and retrieved from the database.
+	--Saving or adding a record will uncheck the "I'm 
+	porting this number" checkbox 
+	--The fields that are irrelevant to created numbers are marked with 
+	"N/A". This occurs when the user creates the numbers, and the info is 
+	sent to and loaded from the database.
+	--Corrected bug: Ported number locations are always retrieved from the 
+	database. Used number.location.id rather than locationID. 
+-Corrected bug: Switching to new numbers, refreshing, and switching 
+back to 'both' numbers would leave the carrier and account number fields 
+empty. The fields are visible now.  
+-Redesigned extensions table, carriers table, and all (functional) phone number tables. Made the tables bordered and striped. Replaced 'edit' with a pencil icon and
+'delete' with a red 'X' icon. Added a thick border between each individual carrier listed. Fixed a bug, the pin column was 
+being displayed upon refreshing, editing, and saving of a carrier without any pin information. Didn't account for pin values 
+of 'null' (I may be wrong here. I may have to revisit in the future)
+
+-I've noticed a new bug. For the time being, if I've decided to port numbers, order them, or both, I'll stick to that option. Switching between them may mess
+with the invidual columns of each tab when I refresh the page. Nonetheless, this will be taken care of, so long as I know where the source is. All types of phone numbers
+interlap in $scope.loadPhoneNumbersFromDatabase. Take a look there.
+
+-Order the numbers created in the both numbers tab. Hasn't been tested, 
+and no regression test has been performed on ordering new numbers. 
