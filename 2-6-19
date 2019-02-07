@@ -1,0 +1,13 @@
+Client-Form
+	-New prompt for both numbers tab
+	-Slight change to carriers tab
+	-Corrected bug where main location won't display on both numbers 
+	 tab
+	-Corrected bug where DID Ext # wasn't being displayed on both 
+	 numbers tab
+	-Corrected issue where DIDExt wasn't being saved to the datbase 
+	 on both numbers tab, and where the DIDExt wasn't being loaded 
+	 into the form. DIDExt isn't saved the same way for both numbers 
+	 tab as it is for the other tabs. Current fix results in a 
+	 different implementation of DIDExt for both numbers tab.
+	-Slight change to single location tab 
