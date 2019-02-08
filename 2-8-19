@@ -15,6 +15,30 @@ Client-Form:
 	-Ported Number Text-Fields: Text-fields for bothNumbers and 
 	 portedNumbers use the new verifyNumber algorithm.
 Staff-Form:
-	-Corrected small issue where modifying a feature would not save
-	 changes.
-
+	Modify-Form:
+		-Corrected small issue where modifying a feature would 
+		 not save changes.
+		-Created Promo-Codes table. Allow user to create promo 
+		 codes, and specify deductions.
+		-Promo codes are saved to the database, and retrieved 
+		 from the database
+		-Added feature where if 'type' field is changed, then 
+		 all fields will have their red borders removed
+		-Added new field, 'deduction', for promo code entry
+		-User can no longer edit an order item as it's being used
+		 in the order form
+		-User can't delete a promo-code while it is in use (i.e. in 
+		 the current order-form)
+	Order-Form:
+		-Added Promo-Code functionality. User can enter in a
+		 promo code entered in Modify-Form, and a new Total Contract 
+		 MRC will be returned, with the amount to be deducted also
+		 displayed.
+		-Promo-Code is saved to database
+		-Prompt informs user that promo code is invalid
+		-User can't submit form if promo code is invalid
+	Transaction-Database:
+		-Promo codes are loaded into transaction database
+		-Corrected issue where deleting a transaction would not delete
+		 all of the content that transaction is tied to in the database 		
+		
