@@ -14,3 +14,7 @@ Client-Form:
 	 displayed with the new format.
 	-Ported Number Text-Fields: Text-fields for bothNumbers and 
 	 portedNumbers use the new verifyNumber algorithm.
+Staff-Form:
+	-Corrected small issue where modifying a feature would not save
+	 changes.
+
