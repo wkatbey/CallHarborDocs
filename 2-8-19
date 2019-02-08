@@ -1,0 +1,16 @@
+PNumber.js
+	-Changed type of string accepted by verifyNumber algorithm => 
+	 from (xxx)-xxx-xxxx to (xxx) xxx-xxxx, with no space between 
+	 the closing parenthesis and the digit following accepted and 
+	 immediately corrected. Refactored verifyNumber(), while I 
+	 previously used manual string matching, I now use regular 
+	 expressions.
+	-Don't allow characters other than digits within 'x' fields	
+	-Wrote new method: removeFormattingFromNumber(), takes as input 
+	 a phone number, removes the whitespace, all parenthesis, and 
+	 the single dash. 
+Client-Form:
+	-Phone Number retrieval: phone numbers are retrieved and 
+	 displayed with the new format.
+	-Ported Number Text-Fields: Text-fields for bothNumbers and 
+	 portedNumbers use the new verifyNumber algorithm.
