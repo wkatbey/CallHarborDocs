@@ -1,0 +1,12 @@
+Client-Form:
+
+Retrieval of Toll-Free numbers is functional again, on the new numbers 
+tab. Has not been tested on the both numbers tab. 
+
+Discovered bugs on both numbers tab:
+	-Select "I'm porting this number, edit an ordered number, form 
+	doesn't switch.
+	-Account number (select box) is not loaded
+	-Account number (select box) stays red after change
+
+
