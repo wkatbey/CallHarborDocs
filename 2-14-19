@@ -1,0 +1,27 @@
+Client-Form:
+	-Navbar only displays company name, pin, and log-out link.
+	-Added new CSS class tab-table-sm, specifically for the 
+	 extensions table
+	-Carrier-Tab:
+		-Corrected issue that occurred with the following: The 
+		 carrier form is hidden, the user clicks 'edit', and after 
+		 saving their changes, the 'next' button remains hidden.
+		-Corrected issue: User edits a carrier, saves their 
+		 changes, and the single carrier's account number (or 
+		 list of account numbers) won't display on the Ported 
+		 Numbers Tab. (Corrected issue for deletion of carriers)
+		-Set isSingleCarrier and pushedCarrier after loading 
+		 carriers from the database, whereas previously they 
+		 were not set
+		-Created new fields for a carrier's billing location
+		-Created working column for carrier's location
+	-Numbers-Tab:
+		-Comment is loaded upon clicking the 'edit' button
+	
+Staff-Form:
+	-Corrected issue where only one transaction is displayed in the 
+	 archive database. All archived submissions are moved to the 
+	 archive database. 
+	-Corrected issue where carrier and account number wouldn't 
+	 display for bothNumbers on the verify-client page and the 
+	 client-data page
