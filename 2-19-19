@@ -1,0 +1,34 @@
+Client-Form:
+	Carriers-Tab:
+		-Location column displays street address, city, and state
+		-Successfully save and load locations from database 
+		-An account number form is displayed by default. User can 
+		 delete this account number if they choose.
+		-Wrote function to remove red borders from carrier fields if 
+		 an edit form is generated or if the carrier is inserted.
+	Review-Tab:
+		-Display carrier location info.
+
+Staff-Form
+	Verify-Client-Page & Client-Data-Page:
+		-Carrier location is loaded and displayed, in full
+		-Display comment link, on click display's phone number's
+		 comment (below its respective row)
+		-Billing location is displayed in full
+	Transaction & Archive Database
+		-Allow user to 'restore' an archive, transferring it 
+		 successfully back to the transaction databse.
+		-Corrected issue where if user searched for a company, and 
+		 restored/archived the company, the company would still 
+		 display after the search results were drawn back (until the
+	 	 page was refreshed)
+	Modify-Users Page:
+		-Switched to fetch api, to retrieve ranks. Continued issue 
+		 of data not loading into fields unless another field has 
+		 been clicked.
+	Order-Form: Prefilled Numbers Form:
+		-Removed 'Phone Numbers' option. 
+		-Added comment field, comment successfully added to phone 
+		 number. User can display/hide comment
+		-Added 'Key' text field and 'Save Data' and 'Load Data' 
+		 buttons. Only prototypes for the time being.

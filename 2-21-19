@@ -1,0 +1,6 @@
+(Additional progress)
+Client & Staff-Side:
+	-User must enter tax ID number for at least one entry. For entries 
+	 without a tax ID number, value 'N/A' will display instead, within
+	 all tables in the app that contain billing accounts.
+

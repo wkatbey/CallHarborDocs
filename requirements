@@ -1,0 +1,9 @@
+Client-Form:
+
+-Switch from both-numbers to ported-numbers or new-numbers (and vice versa) should not
+ migrate phone data into new form.
+
+
+Staff-Form:
+
+-Edit and delete individual client transactions. When editing a transaction, data is loaded into order form. 'Submit Data' button is replaced with 'Save Changes'

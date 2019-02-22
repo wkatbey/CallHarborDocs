@@ -1,0 +1,14 @@
+-Created new searching algoritm for transaction database. Allows user to type in value and recieve multiple matching
+inputs
+
+-Created new algorithm to retrieve phone numbers, and extract only the phone numbers that were specified for the user's
+current type (i.e. ported, created, both) rather than display all of them. 
+
+-Corrected bug that hid phone-numbers table in the transaction database when the user is both porting and creating numbers
+
+-The following process is successful: 
+	-Creating an order
+	-Using order pin to configure data on client-side
+	-Select 'Porting Numbers'
+	-Submit data
+	-

@@ -1,0 +1,11 @@
+Display phone number notes on staff-side
+>Billing location for Carriers
+Add 'notes' for prefilled data
+-Fixed price promotional codes
+
+-Phone Numbers: Like grasshopper 
+
+>Strip out info on navbar besides name, pin, & log out (Client-Side)
+
+-Trans Database retrieves prefilled numbers 
+-Remove any tab related to phone numbers on client side

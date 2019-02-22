@@ -1,0 +1,24 @@
+Staff-Form
+-Re-designed archive database, to resemble transaction database
+-Deletion of transaction from transaction database results in deletion of that
+ record in database
+-User can edit order items, save changes, updates record in database
+-Changed color of headings on verify client form
+-Added 'edit' and 'delete' icons for modify users form
+-Deletion of transaction from database results in deletion of all client records connected to
+that transaction's pin
+-If user deletes all phone types, features, or hardware, the table will no longer display. Rather,
+a message indicating the list is empty is displayed
+-User deletes hardware, and the hardware is deleted from the database. Didn't work due to a typo in
+save_order_tech.php
+-Added button that generates a random, unique, four digit pin
+
+Client-Form
+-Billing accounts form displays correctly upon first login. The application attempted 
+to retrieve 'showForm' from a table where a record, with the user's pin, didn't initially 
+exit, thereby hiding the form upon first login.
+-When a transaction is deleted, doesn't allow user to log in using that pin
+-When a transaction is deleted, when user refreshes, they're logged out of form, and
+the company info on the navbar doens't appear (i.e. isLoggedIn is set to false)
+-Billing account email and phone number are verified, and user is not allowed to add
+the billing account to the table if they aren't valid
