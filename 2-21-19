@@ -4,3 +4,7 @@ Client & Staff-Side:
 	 without a tax ID number, value 'N/A' will display instead, within
 	 all tables in the app that contain billing accounts.
 
+Staff-Side:
+	Transaction & Archive Databases
+		-If no promo code, displays N/A
+
